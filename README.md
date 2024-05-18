@@ -19,3 +19,92 @@ Electric vehicles have been in the limelight for their sustainable use and long-
 
 ## Limitations<br />
 We focused exclusively on Toronto for this project due to a lack of comprehensive data covering electric vehicles (EVs) and speed indices across the entire Greater Toronto Area (GTA). Obtaining such datasets for the GTA posed challenges, due to factors such as incomplete/missing records, the absence of relevant information and the privatization of certain data. Our decision to primarily use data for light-duty EVs (i.e. passenger cars) was because of a similar constraint since there was limited data available for EV buses due to issues such as the non-existence of such public transportation systems and/or privatization of such data. <br />
+
+## Goals and Objectives <br />
+### Problem & Goal <br />
+The goal of this project is to identify the external factors that have impacts on the development and adaptability of EV infrastructure in the city of Toronto and its overall impact on the pre-existing transportation system. Analyzing factors such as charging station congestion and EV vehicle congestion will provide a pathway to comprehend how to improve charging availability, increase awareness regarding EVs, and assess ways to improve the charging infrastructures and locations. As a supplementary project to Solv4x's current project with Metrolinx, our work will aid them in creating their developmental strategy and further help general stakeholders in the industry. <br />
+### Objectives <br />
+The primary objective of the project is to discover how the battery life of electric vehicles (EVs) can be optimized within Toronto's transportation system by identifying and addressing environmental factors, with a specific focus on issues like charging station congestion and traffic wait times. We wish to contribute to the successful integration of electric buses into the public transportation system and support Solv4x’s current project with Metrolinx by doing the following:<br />
+Charging Station Location and Density Analysis<br />
+Electric Vehicle Ownership Density<br />
+Resource Allocation Analysis<br />
+Traffic Congestion Analysis (Buffer Time Indices)<br />
+Temperature Impact Assessment<br />
+Resource Allocation Strategies<br />
+Infrastructure Development Recommendations<br />
+## Methods <br />
+Our project was divided into two main phases: Data Collection & Cleaning and Mapping & Analysis. During the first phase, the following data was collected, munged, and filtered from the following sources: Ontario EV charging stations collected from Natural Resources Canada’s Alternative Fuelling Stations Locator, Toronto Municipal Boundary from City of Toronto’s Open Dataset, Canada FSA boundaries from Statistics Canada’s 2021 Census Boundaries, Ontario EV ownership data from Government of Ontario’s Open Dataset, Landsat 8 Collection 2 Tier 2 TOA Reflectance satellite images from Google Earth Engine’s Landsat collections and Travel Speed data for Cars and Trucks from Ontario’s Ministry of Transportation. The data was cleaned primarily using ArcGIS Pro, Google Earth Engine and Excel. We used these tools to further isolate the attributes and spatial area that we wanted to focus on: Toronto. The boundary files proved useful for clipping our data and shortening the original datasets. During the next mapping & analysis phase, we created the following nine maps: EV charging station location map, EV charging station density map, EV Ownership Density by FSA mapped to locations of EV Stations, EV Charging Station Location Allocation Analysis map, Traffic Congestion Analysis maps (4 maps in total), and the Land Surface Temperature map of Toronto. All of the maps were created on ArcGIS Pro excluding the temperature map, which was created on Google Earth Engine using a Python script. We looked at individual charging station locations as well as comparing the densities of stations and recorded EV ownerships across Toronto. We further looked into how station hotspots, traffic wait times and temperature affected EV charging.<br />
+
+Our focus in this project was the identification and visualization of the possible factors affecting the expansion and transition of global transportation systems to electric models. Hence, our deliverables consisted of two main components that were encompassed in the ArcGIS story map. One often overlooked feature in projects such as these is the flexibility and applicability of the model created in the conclusion of the project. We decided to use an example of a real-world example of a city to provide recommendations that could be widely applicable to a diverse range of transportation systems around the world. Lastly, an ArcGIS story map was created to portray findings with the expectation that it would allow users to interact with the data in the visualizations. This story map effectively communicated the goals and outcomes of our projects to readers, including stakeholders.<br />
+
+## Results & Discussion<br />
+
+## Conclusion & Recommendations<br />
+In conclusion, there are a plethora of external environmental variables that can affect EV charging efficiency and in the end EV battery life. The key to the optimization of such a system is the handling of such variables, which have been highlighted in this report to create an efficient and effective system for transportation companies to work with. The variables we have measured are also quantifiable and can be compared yearly as indicators of whether or not a system is accommodating all the necessary factors for its benefits. A robust example of an electrified system would be Shenzhen, a city with a population of 12.5 million people in Southern China. It is the first megacity to achieve full electrification of its public transportation system, where the city operates the largest electric fleet in the world, with a whopping amount of 16,539 pure battery e-buses (Lin et al., 2019). However, as the infrastructure was expanding, and different systems were applied, Shenzhen faced a variety of problems. Issues such as power grid overload, the prerequisite of multilateral negotiation, and electromagnetic radiation started surfacing as valid constraints to the development of the new transportation network (Lin et al.). They also faced the constraint of land scarcity, which resulted in innovative solutions being implemented (Lin et al.). Specifically, large-scale, multi-floored bus charging, parking, and maintenance stations were designed and integrated into the city's infrastructure (Lin et al.). Shenzhen's strategies in achieving full electrification of its transportation system, particularly its design of large-scale, multi-floored charging and maintenance stations for electric buses, can serve as a robust model example for other urban centers and transport systems, including Metrolinx as they consider similar transitions for Toronto and other cities in the GTA.<br />
+
+## References<br />
+All-electric vehicles. Fuel Economy. (n.d.). https://fueleconomy.gov/feg/evtech.shtml
+Analyzing the effects of traffic congestion on electric car electricity usage. (2023). Energy5. 
+https://energy5.com/analyzing-the-effects-of-traffic-congestion-on-electric-car-electricity
+-usage<br /><br />
+City of Toronto. (2019). City of Toronto Electric Vehicle Strategy. 
+https://www.toronto.ca/wp-content/uploads/2020/02/8c46-City-of-Toronto-Electric-
+Vehicle-Strategy.pdf<br /><br />
+Electric Car Benefits. (n.d.). Plug 'N Drive. https://www.plugndrive.ca/electric-vehicle-benefits‌
+Electric Vehicles Can Dramatically Reduce Carbon Pollution. (n.d.). Natural Resources Defense 
+Council. https://www.nrdc.org/bio/luke-tonachel/<br /><br />
+Government of Canada. (2022, December). Proposed Regulated Sales Targets for Zero-Emission 
+Vehicles. https://www.canada.ca/en/environment-climate-change/news/2022/12/
+Proposed-regulated-sales-targets-for-zero-emission-vehicles.html<br /><br />
+How electric vehicles are benefiting the environment. Next Ride. 
+	https://nextridens.com/blog/electric-vehicles-benefit-environment<br /><br />
+Hydro-Québec. (n.d.). Electric vehicles: An eco-friendly choice from start to finish!.
+https://www.hydroquebec.com/transportation-electrification/electric-vehicles/an-eco-friendly-choice.html<br /><br />
+Infrastructure Canada. (2021, October 12). Zero emission transit fund. 
+https://www.infrastructure.gc.ca/zero-emissions-trans-zero-emissions/index-eng.html<br /><br />
+Jaeger, J. (2023). These countries are adopting electric vehicles the fastest. 
+https://www.wri.org/insights/countries-adopting-electric-vehicles-fastest<br /><br />
+Kurdve, M., Zackrisson, M., Johansson, M. I., Ebin, B., & Harlin, U. (2019, April 15).  
+Considerations when modelling EV battery circularity systems. MDPI. https://www.mdpi.com/2313-0105/5/2/40<br /><br />
+Lin, Y., Zhang, K., Shen, Z-JM., & Miao, L. (2019). Charging Network Planning for Electric Bus 
+Cities: A Case Study of Shenzhen, China. Sustainability, 11(17): 4713. 
+https://doi.org/10.3390/su11174713<br /><br />
+Manutworakit, P., & Choocharukul, K. (2022, July 11). Factors influencing battery electric 
+vehicle adoption in Thailand-expanding the unified theory of acceptance and use of technology’s variables. MDPI. https://www.mdpi.com/2071-1050/14/14/8482
+Metrolinx. (n.d.). About us. https://www.metrolinx.com/en/about-us<br /><br />
+Metrolinx. (2023, May). EV Go Buses Charge Ahead in Next Phase of Trial. 
+https://www.metrolinx.com/en/news/ev-go-buses-charge-ahead-in-next-phase-of-trial<br /><br />
+Neighbourhood income toronto 2020. (n.d.). Retrieved November 29, 2023, from 
+https://schoolofcities.github.io/neighbourhood-income-toronto-2020/<br /><br />
+Plug N’ Drive. (2017). Driving EV Uptake in the Greater Toronto and Hamilton Area How 
+Driver Perceptions Shape Electric Vehicle Ownership in the GTHA. 
+https://www.plugndrive.ca/wp-content/uploads/2017/10/Driving-EV-Uptake-in-the-
+Greater-Toronto-and-Hamilton-Area.pdf <br /><br />
+Reykjavik city municipal plan | reykjavik. (n.d.). Retrieved November 23, 2023, from 
+https://reykjavik.is/en/municipal-plan <br /><br />
+Samsara. (2021, November 3). How Are Electric Vehicles Better for the Environment?.
+https://www.samsara.com/guides/how-are-electric-vehicles-better-for-the-environment/<br /><br />
+The most detailed income map of Toronto you’ve ever seen! (n.d.). Retrieved November 29, 
+2023, from https://www.datalabto.ca/incomes/<br /><br />
+
+## Appendix A: Map Data Sources<br />
+Earth Engine Data Catalog. (2022). USGS Landsat 8 Collection 2 Tier 2 TOA Reflectance. 
+Retrieved from https://developers.google.com/earth-engine/datasets/catalog/
+LANDSAT_LC08_C02_T2_TOA<br /><br />
+Government of Canada. (2021). 2021 census boundary files. https://www12.statcan.gc.ca/census-
+recensement/2021/geo/sip-pis/boundary-limites/index2021-eng.cfm?Year=21<br /><br />
+Government of Ontario. (2023). Electric vehicles in ontario – by forward sortation area—Ontario 
+data catalogue. Retrieved November 1, 2023, from https://data.ontario.ca/dataset/electric-
+vehicles-in-ontario-by-forward-sortation-area<br /><br />
+Ontario electric charging stations / bornes de recharge électriques de l'Ontario. (2020). Retrieved 
+November 1, 2023, from https://hub.arcgis.com/datasets/453df818a0844533bda269
+e61bf94f7d_0/about<br /><br />
+Ontario Ministry of Transportation. (2016). 2016 Travel Speed and Performance Measure (Car). 
+Retrieved from https://icorridor-mto-on-ca.hub.arcgis.com/datasets/0575577257da
+451f8b4b4097f910962e_0/about<br /><br />
+Ontario Ministry of Transportation. (2019). 2019 Travel Speed and Performance Measure 
+(Truck). Retrieved from https://icorridor-mto-on-ca.hub.arcgis.com/datasets/
+71111ea2631c415492f5acd32fa6964d_0/about<br /><br />
+Regional Municipal Boundary. (2019). Retrieved November 1, 2023, from 
+https://open.toronto.ca/dataset/regional-municipal-boundary/<br /><br />
+
